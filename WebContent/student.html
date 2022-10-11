@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container
+            {
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(215, 205, 224);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .inside
+            {
+                width: 500px;
+                height: 500px;
+                border: 3px solid rgb(148, 140, 140);
+                border-radius: 20px;
+                background-color: rgb(231, 230, 148);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+            input
+            {
+            	text-size:10px;
+                padding: 20px;
+                margin: 10px;
+                border-radius: 30px;
+            }
+            .submittion
+            {
+                padding: 10px;
+                margin-left: 110px;
+                justify-items: center;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="inside">
+                <form action="InsertStudent" method="post">
+                    <table>
+                        <tr>
+                    <td>Name:</td><td><input type="text" name="student-name"></td>
+                </tr>
+                <tr>
+                    <td>
+                    USN:</td><td><input type="text" name="student-usn">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Section:</td><td><input type="text" name="student-section"></td>
+                </tr>
+                <tr>
+                    <td>Branch:</td><td><input type="text" name="student-branch"></td>
+                </tr>
+
+                    
+                </table>
+                <div class="submittion">
+                    <input type="submit" value="Submit">
+                </div>
+
+
+                </form>
+
+            </div>
+
+
+        </div>
+       
+
+
+    </body>
+</html>
